@@ -1,5 +1,5 @@
-useDynLib(RcppXts)
+useDynLib(RcppXts, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
-import(Rcpp)
+import(methods)
+importFrom(Rcpp, loadModule)
 import(xts)
-

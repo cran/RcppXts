@@ -8,6 +8,12 @@
 \alias{xtsRbind}
 \alias{xtsCoredata}
 \alias{xtsLag}
+\alias{xtsEndpoints}
+\alias{xtsMakeIndexUnique}
+\alias{xtsMakeUnique}
+\alias{xtsMerge}
+\alias{xtsNaOmit}
+\alias{xtsNaLocf}
 \docType{package}
 \title{Interface to the C API of xts}
 \description{This package helps with an Rcpp-based interface to the API
@@ -20,6 +26,13 @@
   xtsRbind(x, y, dup)
   xtsCoredata(x)
   xtsLag(x, k, pad)
+  xtsEndpoints(x, on, k, addlast)
+  xtsMakeIndexUnique(x, eps)
+  xtsMakeUnique(x, eps)
+  xtsMerge(x, y, all, fill, retclass, colnames, suffixes, retside,
+           check_names,env, coerce)
+  xtsNaOmit(x)
+  xtsNaLocf(x, fromLast, maxgap, limit)
 }
 \arguments{
   \item{x}{an \code{xts} object}
@@ -28,9 +41,35 @@
   \item{strictly}{a boolean switch}
   \item{check}{a boolean switch}
   \item{dup}{a boolean switch whether to remove duplicates}
-  \item{k}{an integer denoting lag length}
+  \item{k}{an integer denoting lag length, or interval}
   \item{pad}{a boolean switch whether to pad}
+  \item{on}{a numeric value for desired distance, measure in seconds, between endpoints}
+  \item{addlast}{a boolean switch whether last value should be included}
+  \item{eps}{a numeric value for the desired minimal difference between elements}
+  \item{all}{a boolean vector with two elements indication whether left
+    or right joins are desired}
+  \item{fill}{a vector with value to be filled at the end, if needed;
+    defaults to \code{NA}}
+  \item{retclass}{a boolean switch indicating whether the return class
+    attribute should be set; default is TRUE}
+  \item{colnames}{a character vector with column names}
+  \item{suffixes}{a character vector with column name suffixes; default is NULL}
+  \item{retside}{a boolean switch of size two for the desired return
+    dimension if these need to be set}
+  \item{check_names}{a boolean switch to enable name checking}
+  \item{env}{an environment, possibly empty}
+  \item{coerce}{an integer value indicating if coercion should be forced}
+  \item{fromLast}{a boolean variable indicating whether observations
+    should be carried backward rather than forward; default FALSE}
+  \item{maxgap}{a double indicating the maximum number of NAs to be
+    retained; default is Inf}
+  \item{limit}{a double value for the limit of consecutive NA values;
+    default is Inf}
 }
+\details{Please use the \pkg{xts} sources as the ultimate reference for
+  these variables. The R functions in package \pkg{xts} set some of
+  these values up, and the \pkg{RcppXts} package could eventually shadow
+  some of this.}
 \author{Dirk Eddelbuettel}
 \keyword{package}
 \seealso{\code{\link[xts:xts-package]{xts}}}

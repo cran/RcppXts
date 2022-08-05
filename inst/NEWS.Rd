@@ -1,10 +1,21 @@
 \name{NEWS}
 \title{News for Package \pkg{RcppXts}}
-\newcommand{\cpkg}{\href{http://CRAN.R-project.org/package=#1}{\pkg{#1}}}
+\newcommand{\cpkg}{\href{https://CRAN.R-project.org/package=#1}{\pkg{#1}}}
+
+\section{Changes in version 0.0.5 (2022-08-05)}{
+  \itemize{
+    \item Depends on \cpkg{xts} 0.9-6 now on CRAN
+    \item Exports (and documents) a number of additional functions 
+    \item Switch CI use to \href{https://eddelbuettel.github.io/r-ci/}{r-ci}
+    and \href{https://eddelbuettel.github.io/r2u/}{r2u}
+    \item README.md, DESCRIPTION and NEWS.Rd were updated and expanded
+    \item NAMESPACE import of the shared library uses registration
+  }
+}
 
 \section{Changes in version 0.0.4 (2013-01-18)}{
   \itemize{
-    \item Depends on (unreleased) \cpkg{xts} 0.9-2 now on CRAN
+    \item Depends on \cpkg{xts} 0.9-2 now on CRAN
   }
 }
 

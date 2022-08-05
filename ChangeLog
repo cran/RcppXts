@@ -1,3 +1,83 @@
+2022-08-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.5
+
+2022-07-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version and date
+
+	* .github/workflows/ci.yaml (jobs): Use r2u
+
+2022-07-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Adjust URLs to https
+	* inst/NEWS.Rd: Idem
+
+2021-12-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Remove unused continuous integration artifact and badge
+
+2021-05-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (URL, BugReports): Added to DESCRIPTION
+
+2021-01-13  Dirk Eddelbuettel  <edd@debian.org>
+
+        * .github/workflows/ci.yaml: Add CI runner using r-ci
+	* README.md: Add new badge
+
+2020-07-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/xtsMod.cpp: Add 'check_names' argument to xtsMerge
+	* man/RcppXts-package.Rd: Document it
+
+	* tests/checks.R: Tweak, but still skip xtsMerge example
+
+	* src/init.c: Added to register Rcpp Modules 'boot' routine
+
+2020-06-23  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version and date
+
+	* README.md: Add a 'last commit' badge
+
+	* tests/checks.R: Comment-out two checks for now
+
+	* .travis.yml: Switch to 'bionic' and R 4.0
+
+2018-12-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* NAMESPACE: Add .registration=TRUE to useDynLib()
+
+2017-08-26  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Updated to use run.sh from r-travis
+
+2016-05-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Minor edits to catch upto current CRAN standards
+
+	* README.md: Expanded and updated with more badges and new sections
+
+	* .travis.yml: Updated, faster via r-cran-rcpp and r-cran-xts binaries
+
+2014-02-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Added
+
+2013-10-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* NAMESPACE: Minor cleanup
+
+2013-07-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* man/RcppXts-package.Rd: Added some documentation for new functions
+
+2013-06-26  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/xtsMod.cpp: Added more functions now that xts 0.9-5 is on CRAN
+	* tests/check.R: Added some illustrations / tests as well
+
 2013-01-18  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version): 0.0.4
