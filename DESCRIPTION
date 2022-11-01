@@ -1,8 +1,8 @@
 Package: RcppXts
 Type: Package
 Title: Interface the 'xts' API via 'Rcpp'
-Version: 0.0.5
-Date: 2022-08-05
+Version: 0.0.6
+Date: 2022-11-01
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Access to some of the C level functions of the 'xts' package.  
@@ -17,6 +17,6 @@ Imports: methods, Rcpp (>= 0.10.2)
 LinkingTo: Rcpp, xts
 RcppModules: xts
 NeedsCompilation: yes
-Packaged: 2022-08-05 12:12:31 UTC; edd
+Packaged: 2022-11-01 13:07:02 UTC; edd
 Repository: CRAN
-Date/Publication: 2022-08-05 12:30:02 UTC
+Date/Publication: 2022-11-01 13:42:58 UTC
